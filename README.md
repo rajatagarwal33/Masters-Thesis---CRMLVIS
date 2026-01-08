@@ -157,7 +157,7 @@ This project demonstrates my ability to:
 ├── instructions.md             # Setup and usage instructions
 ├── thesis_project_report.pdf   # Master’s thesis report
 
-
+```
 
 ---
 
