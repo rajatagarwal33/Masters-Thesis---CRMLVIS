@@ -1,2 +1,171 @@
-# Masters-Thesis---CRMLVIS
-CRML-VIS: A modular toolchain for automatically visualizing Common Requirements Modeling Language (CRML) specifications as editable Draw.io (diagrams.net) diagrams. Built with ANTLR parsing, lightweight modeling, deterministic layout, and XML export. Improves stakeholder communication working on complex CPS. Master's thesis extensible prototype. 
+# CRML-VIS  
+**Automated Visualization of CRML Models**
+
+Master’s Thesis Project – Computer Science (30 ECTS)
+
+---
+
+## Overview
+
+**CRML-VIS** is an automated visualization toolchain that converts **CRML (Common Requirement Modeling Language)** specifications into **clear, editable visual diagrams**.
+
+The project was developed as my **Master’s Thesis** at **Linköping University**, Department of Computer and Information Science. It addresses a key challenge in requirements engineering for complex cyber-physical systems: making formal, text-based requirement models understandable and usable by both technical and non-technical stakeholders.
+
+CRML-VIS automatically generates SysML-inspired diagrams from CRML code, improving communication, collaboration, and early detection of conflicting requirements.
+
+---
+
+## Academic Context
+
+- **Degree:** Master’s in Computer Science
+- **University:** Linköping University  
+- **Department:** Computer and Information Science (IDA)  
+- **Year:** 2025  
+- **Scope:** 30 ECTS (full Master’s thesis)
+
+**Author:** Rajat Agarwal  
+**Supervisor:** Adrian Pop  
+**Examiner:** Lena Buffoni  
+
+This project was **designed, implemented, evaluated, and documented entirely by me** as part of my Master’s thesis work.
+
+---
+
+## Problem Statement
+
+CRML enables precise and executable modeling of multidisciplinary requirements, but:
+
+- CRML specifications are text-heavy and mathematical
+- Non-technical stakeholders struggle to interpret them
+- Manual creation of diagrams is time-consuming and error-prone
+- Maintaining visual consistency across large models is difficult
+
+CRML-VIS solves this by providing **fully automated, consistent, and editable visualizations** directly from CRML models.
+
+---
+
+## Key Features
+
+- Automated parsing of CRML specifications
+- One-command generation of diagrams
+- Faithful one-to-one mapping between CRML constructs and visual elements
+- SysML-inspired class-style diagrams
+- Editable output using Draw.io (diagrams.net)
+- Deterministic layout for improved readability
+- Modular and extensible architecture
+
+---
+
+## System Architecture
+
+CRML-VIS follows a clean, modular pipeline:
+
+1. **Command-Line Interface (CLI)**  
+   Accepts CRML files as input
+
+2. **ANTLR-Based Parsing**  
+   Parses CRML grammar into a structured parse tree
+
+3. **Listener-Based Extraction**  
+   Extracts classes, requirements, instances, and associations
+
+4. **Internal Model Representation**  
+   Lightweight, format-agnostic data structures
+
+5. **Layout Engine**  
+   Computes diagram layout and styling rules
+
+6. **Diagram Emitter**  
+   Outputs Draw.io (diagrams.net) XML files
+
+Each CRML file produces a corresponding diagram file that can be opened and edited directly in Draw.io.
+
+---
+
+## Technology Stack
+
+- **Language:** JavaScript
+- **Parsing:** ANTLR
+- **Visualization Output:** Draw.io / diagrams.net XML
+- **Workflow:** Command-line based
+- **Editor Compatibility:** VS Code friendly
+- **Design Approach:** Model-driven, modular architecture
+
+---
+
+## Design Decisions
+
+Multiple visualization libraries were evaluated, including Mermaid, PlantUML, JointJS, and GoJS.  
+**Draw.io** was selected because it provides:
+
+- Editable diagrams suitable for real-world collaboration
+- A simple, well-documented XML format
+- Browser-based and IDE-friendly usage
+- Easy integration into future web or IDE tools
+
+This choice ensures that generated diagrams are not just visual artifacts, but **practical engineering assets**.
+
+---
+
+## Evaluation
+
+The tool was evaluated using three representative CRML models:
+
+- Pumping System
+- Microgrid
+- Smart Building
+
+### Results Summary
+
+- Generated diagrams fully covered CRML constructs without loss of information
+- No manual corrections were required beyond optional resizing
+- Diagrams significantly improved stakeholder understanding
+
+### User Study Highlights
+
+- Understanding improved from **2.6/5 (CRML code)** to **4.4/5 (diagrams)**
+- **87%** preferred diagrams for identifying conflicting requirements
+- Collaboration usefulness rated **4.6/5**
+- **93%** preferred diagrams during requirement reviews
+
+---
+
+## What This Project Demonstrates
+
+This project demonstrates my ability to:
+
+- Independently deliver a large-scale software project
+- Design modular and extensible systems
+- Work with parsing, grammars, and code generation
+- Build developer-focused tooling
+- Translate complex domain problems into usable software
+- Combine research methodology with practical engineering
+
+---
+
+## Repository Structure
+
+/src → Source code
+/docs → Master’s thesis report (PDF)
+/demo → Demo recordings (optional)
+
+---
+
+## Thesis Report
+
+The complete Master’s thesis report is available in the `/docs` directory.
+
+---
+
+## Future Improvements
+
+- Multi-row and paginated layouts for large diagrams
+- Additional output formats (e.g., Mermaid, SVG)
+- Web-based application with embedded editing
+- IDE extensions for tighter workflow integration
+
+---
+
+## Author
+
+**Rajat Agarwal**  
