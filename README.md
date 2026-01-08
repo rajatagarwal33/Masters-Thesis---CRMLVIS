@@ -31,6 +31,18 @@ This project was **designed, implemented, evaluated, and documented entirely by 
 
 ---
 
+## Relation to the CRML Project
+
+CRML-VIS was developed as part of the broader **CRML (Common Requirement Modeling Language)** ecosystem.
+
+The visualization toolchain created in this thesis aligns with ongoing development of the CRML compiler and tooling, and its functionality can be seen integrated within the main CRML project repository:
+
+🔗 https://github.com/lenaRB/crml-compiler/tree/DrawioDiagramGenerators/DiagramGenerators
+
+This thesis project focuses specifically on the **design, implementation, and evaluation of automated diagram generation for CRML models**, contributing a modular and extensible visualization component that complements the wider CRML compiler infrastructure.
+
+---
+
 ## Problem Statement
 
 CRML enables precise and executable modeling of multidisciplinary requirements, but:
