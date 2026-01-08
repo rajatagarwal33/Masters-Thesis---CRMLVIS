@@ -141,6 +141,21 @@ The tool was evaluated using three representative CRML models:
 - **93%** preferred diagrams during requirement reviews
 
 ---
+## Setup and Usage
+
+Detailed instructions on how to set up and run CRML-VIS are provided in:
+
+📄 **`instructions.md`**
+
+The instructions cover:
+- Project setup and dependency installation
+- How to run the tool using the command-line interface
+- How to provide CRML input files
+- How to generate editable Draw.io (diagrams.net) XML output
+
+Please refer to `instructions.md` for step-by-step guidance.
+
+
 
 ## What This Project Demonstrates
 
